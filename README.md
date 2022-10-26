@@ -1,5 +1,5 @@
 # golang-todo-cli
-Simple todolist that have a beutifull visualization in cli. 
+Simple todolist that have a beautiful visualization in cli. 
 
 ![alt text](https://raw.githubusercontent.com/asilv359/golang-todo-cli/main/Screenshot%202022-10-26%20182717.png)
 
