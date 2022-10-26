@@ -9,8 +9,8 @@ Commands
   
   go run ./cmd/todo -add "todos name"            / to add todo
     
-  go run ./cmd/todo -complete="number ure todo  / to mark todo as completed
+  go run ./cmd/todo -complete="number ure todo   / to mark todo as completed
 
-  go run ./cmd/todo -del="number ure todo       / to delete ure todo
+  go run ./cmd/todo -del="number ure todo        / to delete ure todo
   
  
