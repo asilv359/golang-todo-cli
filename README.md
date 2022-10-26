@@ -5,7 +5,9 @@ Simple todolist that have a beutifull visualization in cli.
 
 Commands
 <pre>
-  go run ./cmd/todo -list                         / to show table with your todos
+  go run ./cmd/todo -list  
+or
+  make list                                       / to show table with your todos
   
   go run ./cmd/todo -add "todos name"             / to add todo
     
