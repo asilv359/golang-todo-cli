@@ -5,12 +5,12 @@ Simple todolist that have a beutifull visualization in cli.
 
 Commands
 <pre>
-  go run ./cmd/todo -list                        / to show table with ure todos
+  go run ./cmd/todo -list                         / to show table with your todos
   
-  go run ./cmd/todo -add "todos name"            / to add todo
+  go run ./cmd/todo -add "todos name"             / to add todo
     
-  go run ./cmd/todo -complete="number ure todo   / to mark todo as completed
+  go run ./cmd/todo -complete="number your todo   / to mark todo as completed
 
-  go run ./cmd/todo -del="number ure todo        / to delete ure todo
+  go run ./cmd/todo -del="number your todo        / to delete your todo
   
  
