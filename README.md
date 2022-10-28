@@ -15,4 +15,4 @@ or
 
   go run ./cmd/todo -del="number your todo        / to delete your todo
   
- 
+  make clear                                      / clear your todo list
