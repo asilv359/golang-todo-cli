@@ -53,6 +53,11 @@ func (t *Todos) Delete(index int) error {
 	return nil
 }
 
+func (t *Todos) Clear() error {
+	*t = Todos{}
+	return nil
+}
+
 func (t *Todos) Load(filename string) error {
 	file, err := ioutil.ReadFile(filename)
 	if err != nil {

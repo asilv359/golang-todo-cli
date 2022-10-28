@@ -21,6 +21,7 @@ func main() {
 	complete := flag.Int("complete", 0, "mark a todo as completed")
 	del := flag.Int("del", 0, "delete a todo")
 	list := flag.Bool("list", false, "list all todos")
+	clear := flag.Bool("clear", false, "clear all todos")
 
 	flag.Parse()
 
@@ -32,6 +33,17 @@ func main() {
 	}
 
 	switch {
+	case *clear:
+		err := todos.Clear()
+		if err != nil {
+			fmt.Fprintln(os.Stderr, err.Error())
+			os.Exit(1)
+		}
+		err = todos.Store(todoFile)
+		if err != nil {
+			fmt.Fprintln(os.Stderr, err.Error())
+			os.Exit(1)
+		}
 	case *add:
 		task, err := getInput(os.Stdin, flag.Args()...)
 		if err != nil {
@@ -46,12 +58,6 @@ func main() {
 			os.Exit(1)
 		}
 
-		// todos.Add("sample todo")
-		// err := todos.Store(todoFile)
-		// if err != nil {
-		// 	fmt.Fprintln(os.Stderr, err.Error())
-		// 	os.Exit(1)
-		// }
 	case *complete > 0:
 		err := todos.Complete(*complete)
 		if err != nil {

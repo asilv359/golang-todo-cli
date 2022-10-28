@@ -4,4 +4,6 @@ run/todo:
 list:
 	@go run ./cmd/todo -list
 	
+clear:
+	@go run ./cmd/todo -clear
 	
